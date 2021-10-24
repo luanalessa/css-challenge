@@ -1,0 +1,103 @@
+.circles{
+    display: flex;
+    position: absolute;
+    width: 370px;
+    height: 275px;
+    overflow: hidden;
+    background: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 20px 20px 0 0;
+
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background: rgba(240, 235, 235, 0.329);
+    animation: animate 25s linear infinite;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+}
+
+.circles .one {
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+  }
+  .circles .two {
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+  .circles .three {
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+  .circles .four {
+    width: 10px;
+    height: 10px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  .circles .five {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+  .circles .six {
+    left: 75%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 3s;
+  }
+  .circles .seven {
+    left: 35%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7s;
+  }
+  .circles .eight {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+  .circles .nine {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+  .circles .ten {
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.5;
+      border-radius: 5px;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
