@@ -16,5 +16,5 @@
 
 
 ## Day 00001
-<p align = "center"  id ="one" ><img src = "https://user-images.githubusercontent.com/72531277/138604957-3bd3cb55-45be-4cf5-b9fb-2beeacf3bb9e.png" width = "600"/></p>
+<p align = "center"  id ="one" ><img src = "https://user-images.githubusercontent.com/72531277/138604957-3bd3cb55-45be-4cf5-b9fb-2beeacf3bb9e.png"/></p>
 
