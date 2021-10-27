@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --background-body: #001fff0d;
+    --light-gray: #F0F0F7;
+    --dark-gray: #423e3e;
+    --purple: #623ce8;
+    --shadow : #b5b3b3a6;
+
+    --tag-color-one: #e0fbf6;
+    --tag-color-text-one: #58c2a9;
+    --tag-color-two: #ece7fe;
+    --tag-color-text-two: #8972f3;
+    --tag-color-three: #fde7ea;
+    --tag-color-text-three: #e77f89;
+    --tag-color-four: #f7f8fc;
+    --tag-color-text-four: #a0a6b5;
+
+    --checkbox-color: #009e90;
+    --button-color: #49beb7;
+    --box-color: #fff1d6;
+    --box-color-2: #d3e6ff;
+    --box-color-3: #ffd9d9;
+    --box-color-4: #daffe5;
+    --task-color: #777982;
+
+
+}
+
+body{
+    background: var(--background-body);
+    font-family: 'DM Sans', sans-serif;
+
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0; 
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    max-height: 900px;
+
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 3px var(--shadow);
+    margin: 0 auto;
+}
+
+/*************************************************
+***************** Left Bar ***********************
+*************************************************/
+
+.left-bar{
+    width: 120px;
+    height: 100%;
+    background: var(--purple);
+    border-right: 1px solid var(--shadow);
+
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.left-content{
+    display: flex;
+    color: #fff;
+
+}
+
+.action-list .item{
+    color: var(--main-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+}
+
+.bx {
+    font-size: 26px;
+    margin-left: 5px;
+}
+
+#menu{
+    font-size: 35px;
+    margin: 20px 0 40px 0;
+
+}
+
+/*************************************************
+***************** Right Bar ***********************
+*************************************************/
+.right-bar{
+    width: 320px;
+    height: 100%;
+    border-left: 1px solid #e3e7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+
+.right-content{
+    height: 70vh;
+    position: relative;
+    overflow: auto;
+    padding: 0 10px;
+
+}
+.top-part {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 40px 0 20px 0 ;
+
+}
+
+.top-part .bx {
+    color: var(--gray);
+    margin-right: 14px;
+}
+
+.top-part .count {
+    font-size: 14px;
+    border-radius: 50%;
+
+    background-color: var(--purple);
+    color: #fff;
+    font-weight: bold;
+
+    padding: 5px 10px;
+
+
+}
+
+.header-right{
+    width: 90%;
+
+}
+
+.task-box {
+    width: 130px;
+    height: 20px;
+    position: relative;
+    border-radius: 12px;
+    margin: 20px 0;
+
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0px rgba(235, 235, 235, 1);
+
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.task-box:hover {
+    transform: scale(1.02);  
+}
+
+.time {
+    margin-bottom: 6px;
+    opacity: 0.4;
+    font-size: 10px;
+}
+
+body,
+.item,
+.top-part,
+.top-part .count {
+  display: flex;
+  align-items: center;
+}
+
+.task-name {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.yellow {
+  background-color: var(--box-color);
+}
+.blue {
+    background-color: var(--box-color-2);
+}
+.red {
+    background-color: var(--box-color-3);
+}
+.green {
+    background-color: var(--box-color-4);
+}
+  
+.more-button {
+
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #8e92a4;
+    box-shadow: 0 -4px 0 0 #8e92a4, 0 4px 0 0 #8e92a4;
+    opacity: 0.4;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+}
+/*************************************************
+***************** Page Content *******************
+*************************************************/
+.page-content{
+    width: 100%;
+    height: 90%;
+    padding: 20px 40px 20px 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page-content .header {   
+    width: 100%;
+    font-size: 26px;
+    color: var(--dark-gray);
+    margin-top: 30px;
+}
+
+.content-categories{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e3e7f7;
+    padding: 20px 0;
+
+}
+
+.input-item{
+    display: none;
+}
+
+.category{
+    font-weight: 500;
+    color: var(--dark-gray);
+    border-bottom: 1px solid #ddd;
+    transition:0.2s ease-in;
+    padding: 20px 30px;
+
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+#opt-1:checked + label,
+#opt-2:checked + label,
+#opt-3:checked + label,
+#opt-4:checked + label{
+    color: var(--purple);
+    border-bottom: 3px solid var(--purple);
+}
+
+.task-item{
+    display: none;
+}
+
+.task-list{
+    width: 100%;
+    height: 50%;
+    padding: 30px 0 0 0;
+    overflow: auto;
+    padding-right: 8px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    position: relative;
+
+    color: var(--dark-gray);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.task label {
+    cursor: pointer;
+}
+
+label .label-text:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-left: -28px;
+}
+
+.task-item:checked + label .label-text:before{
+    background-color: var(--purple);
+    border: none;
+    background-image: url('../assets/check.png');
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+}
+
+.tag {
+    width: 65px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.tag.approved {
+    background-color: var(--tag-color-one);
+    color: var(--tag-color-text-one);
+  }
+.tag.progress {
+    background-color: var(--tag-color-two);
+    color: var(--tag-color-text-two);
+}
+.tag.review {
+    background-color: var(--tag-color-three);
+    color: var(--tag-color-text-three);
+}
+.tag.waiting {
+    background-color: var(--tag-color-four);
+    color: var(--tag-color-text-four);
+}
+
+.upcoming{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
