@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --bgcolor: hsl(225, 100%, 94%);
+    --button:  hsl(245, 75%, 52%);
+
+    --section: hsl(225, 100%, 98%);
+    --icon: hsl(224, 23%, 55%);
+    --font: hsl(223, 47%, 23%);
+}
+
+body{
+    background:var(--bgcolor);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#container{
+    width: 250px;
+    height: 370px;
+
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 7px 13px 4px #673ab71f;
+    margin: 60px  auto 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header{
+    width: 250px;
+    height: 130px;
+    background-image: url('../assets/illustration-hero.svg');
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1, p{
+    color: var(--font);
+}
+
+h1{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+p{
+    width: 68%;
+    font-size: 9px;
+    text-align: center;
+}
+
+#product{
+    width: 180px;
+    height: 30px;
+
+    background-color: var(--section);
+    border-radius: 5px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#product img{
+    width: 30px;
+}
+
+#info{
+    width: 100px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+span{
+    font-weight: 600;
+}
+
+a{
+    font-size: 8px;    
+    font-weight: 600;
+}
+
+.btn{
+    all: unset;
+
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+#proceed{
+    background: var(--button);
+    color: white;
+    box-shadow: 0px 7px 13px 4px #673ab736;
+    margin-top: 15px;
+}
+
+#proceed:hover{
+    background: #6c61df;
+
+}
+#cancel{
+    margin-top: 10px;
+}
