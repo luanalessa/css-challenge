@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #FAFAFA;
+    font-family: Roboto;
+
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+
+    padding: 0 215px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+}
+
+.header-content {
+    width: 150px;
+    height: 29px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+} 
+
+ion-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#instagram-logo {
+    margin-top: 6px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 22px;
+    left: 247px;
+    top: 15px;
+
+    background: #DBDBDB;
+}
+
+#search-bar{
+    width: 215px;
+    height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+#search-bar::placeholder{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #979797;
+}
+
+
+main {
+    width: 950px;
+    margin:  88px auto 0 auto ;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* *************************************************** */
+/*                        STORIES                       /
+/* *************************************************** */
+
+#left-content {
+    width: 614px;
+    height: auto;
+}
+
+#stories {
+    height: 90px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 15px;
+    justify-content: center;
+	overflow-x: scroll;
+
+    margin-bottom: 24px;
+}
+
+#stories::-webkit-scrollbar {
+  display: none; 
+}
+
+.user-story {
+    width: 66px;
+    height: 66px;
+    background: url(../assets/images/stories_background.png);
+    border-radius: 50%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.user-story:first-of-type {
+    margin-left: 20px;
+}
+
+.user-story img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+/* *************************************************** */
+/*                         POST                        /
+/* *************************************************** */
+
+.user-post-container {
+    height: 749px;
+    
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    margin-bottom: 60px;
+}
+
+.user-post-header {
+    height: 61px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 17px;
+}
+
+.user-info  {
+    display: flex;
+    align-items: center;
+}
+.user-info img {
+    width: 32px;
+}
+
+.user-info span {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+
+    margin-left: 15px;
+}
+
+.user-info label {
+    width: 100%;
+    display: block;
+    margin-left: 15px;
+    margin-top: 6px;
+
+}
+
+.user-post-container > img {
+    width: 612px;
+    height: 612px;
+}
+
+.user-post-buttons {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px
+}
+
+.left-buttons {
+    display: flex;
+    gap: 13px;
+}
+
+.user-post-container aside {
+    font-weight: 300;
+    font-size: 14px;
+    
+    color: #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+
+    padding: 0 15px;
+}
+.user-post-container aside > img {
+    width: 20px;
+    margin-right: 6px;
+
+    border-radius: 50%;
+}
+
+.user-post-container aside span {
+    font-weight: 500;
+
+}
+
+/* *************************************************** */
+/*                       SIDEBAR                        /
+/* *************************************************** */
+
+#right-content {
+    width: 300px;
+    height: 443px;
+
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+#user-content {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #262626;
+}
+
+#user-content img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    margin-right: 17px;
+}
+
+#user-content label{
+    display: block;
+    font-weight: 300;
+    color: #8E8E8E;
+
+}
+
+#user-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 15px;
+
+    font-size: 12px;
+}
+
+#user-suggestions label {
+    color: #8E8E8E;
+}
+
+#user-suggestions-itens {
+    width: 100%;
+}
+
+#user-suggestions a {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+    color: #139EF2;
+}
+
+#right-content aside {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C7C7C7;
+
+    margin-top: 20px;
+    padding: 0;
+
+    text-overflow: ellipsis;
+    
+}
+
